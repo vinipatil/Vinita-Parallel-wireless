@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+.nav-link:hover {
+    color: #ff5100;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a:hover {
+    color: orangered;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: orangered;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+}
+
+.hero-name {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin-top: 30%;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.awards {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    padding: 15px;
+    line-height: 1.2;
+}
+
+.p1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.p3 {
+    font-size: 20px;
+}
+
+.p2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info {
+    padding: 0 4%;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4%;
+    background-color: rgb(239, 238, 238);
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.link1 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.link1:hover {
+    color: #ff5100;
+}
+
+.icons {
+    color: #ff5100;
+}
+
+/* Product drop-down */
+
+.drop {
+    display: none;
+    position: fixed;
+    top: 68px;
+    overflow-y: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    width: 50vw;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+
+li:hover .drop {
+    display: block;
+    height: 60vh;
+    width: 100%;
+}
+
+.drop ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop ul li {
+    padding: 10px 10px;
+}
+
+.drop img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.col {
+    text-align: center;
+}
+
+.col p {
+    margin: 0;
+}
+
+.col-img {
+    text-align: center;
+    padding: 85px;
+}
+
+.col-img img {
+    max-width: 400px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+a.style {
+    color: black;
+    text-decoration: none;
+}
+
+a.style:hover {
+    color: orangered;
+    border-bottom-color: black;
+}
+
+li.style {
+    color: black;
+    text-decoration: none;
+    display: inline;
+    padding: 0 5px;
+}
+
+li.style a:hover {
+    color: orangered;
+}
+
+/* company dropdown  */
+
+ul li:hover .dropdown-content1{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.dropdown-content1{
+    display: none;
+}
+
+.dropdown-content1 ul li{
+    display: block;
+}
+
+.dropdown-content1 ul{
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown a:hover {
+    color: orangered;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {
+    color: orangered;
+}
+
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.dropdown-content1 ul .dropdown1:hover{
+    display: none;
+}
+
+.dropdown1{
+    position: absolute;
+    margin-left: 4cm;
+    margin-top: -1.3cm;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.dropdown1{
+    display: none;
+}
+
+.dropdown-content1:hover .dropdown1{
+    display: block;
+}
+
+/* dropdown2 */
+
+.dropdown2{
+    position: absolute;
+    margin-left: 4cm;
+    margin-top: -1.2cm;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.dropdown2{
+    display: none;
+}
+
+.dropdown-content1:hover .dropdown2{
+    display: block;
+}
+
+/* dropdown3 */
+
+.dropdown3{
+    position: absolute;
+    margin-left: 4cm;
+    margin-top: -1.3cm;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.dropdown3{
+    display: none;
+}
+
+.dropdown-content1:hover .dropdown3{
+    display: block;
+}
